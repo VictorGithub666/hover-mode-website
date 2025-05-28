@@ -1,0 +1,47 @@
+// 1. First include functions
+@use "bootstrap/scss/functions" as *;
+
+// 2. Include any default variable overrides here
+$blue: rgba(16, 164, 202, 1);
+$blue-light: rgba(16, 164, 202, 0.1);
+
+// 3. Include remainder of required Bootstrap stylesheets
+@use "bootstrap/scss/variables" as *;
+@use "bootstrap/scss/mixins" as *;
+@use "bootstrap/scss/maps" as *;
+
+// 4. Include any optional Bootstrap components
+@use "bootstrap/scss/root" as *;
+@use "bootstrap/scss/reboot" as *;
+@use "bootstrap/scss/type" as *;
+@use "bootstrap/scss/containers" as *;
+@use "bootstrap/scss/grid" as *;
+
+// 5. Add additional custom code here
+body {
+  font-family: "Arial", sans-serif;
+  color: #000;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+#three-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bg-blue {
+  background: $blue;
+  color: white;
+}
+
+.bg-blue-10 {
+  background: $blue-light;
+  padding: 2rem;
+  border-radius: 1rem;
+}

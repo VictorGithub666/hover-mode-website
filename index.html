@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/assets/logo(1).png" />
+    <title>Hover Mode</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Orbitron:wght@400..900&family=Turret+Road:wght@200;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/src/styles/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg bg-light fixed-top"
+      data-bs-theme="light"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://localhost:5173/#home">
+          <img src="/assets/logo(1).png" alt="Logo" width="70" height="70" />
+
+          HOVER MODE
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="http://localhost:5173/#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark"
+                href="http://localhost:5173/#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="http://localhost:5173/#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark"
+                href="http://localhost:5173/#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="content-wrapper">
+      <!-- Three.js Container -->
+      <div id="three-container"></div>
+
+      <!-- Home Section -->
+      <section id="home" class="page-section">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-10">
+              <div class="content-area">
+                <h1>Welcome to Hover Mode</h1>
+                <p class="lead">
+                  Elevating Perspectives, Empowering Innovation
+                </p>
+                <div class="content-box">
+                  <p>
+                    At Hover Mode, we're redefining how the world sees and
+                    interacts with technology...
+                  </p>
+                  <p>
+                    Whether you're an aspiring drone pilot, a school seeking to
+                    integrate tech-based learning, or a farm ready to embrace
+                    smarter chemical application, Hover Mode is your trusted
+                    partner in the skies and beyond.
+                  </p>
+                  <p class="mt-4">
+                    <strong
+                      >Explore. Learn. Innovate. The future flies with
+                      us.</strong
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <!-- Empty space for drone to appear -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="page-section bg-light">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-end">
+            <div class="col-lg-7 order-lg-2">
+              <div
+                class="content-area"
+                style="background-color: rgba(16, 164, 202, 255)"
+              >
+                <h2 class="mb-1">Our Services</h2>
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="service-card bg-blue p-1 rounded">
+                      <h4>
+                        <img
+                          src="/assets/camera-drone.png"
+                          width="40"
+                          height="40"
+                          alt=""
+                          class="px-1"
+                        />Aerial Photography & Videography
+                      </h4>
+                      <p>
+                        Capture breathtaking visuals from above. Our licensed
+                        drone pilots and creative team deliver high-resolution
+                        aerial photography and cinematic videos for events, real
+                        estate, construction, marketing, and more.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="service-card bg-blue p-1 rounded">
+                      <h4>
+                        <img
+                          src="/assets/drone-training.png"
+                          width="40"
+                          height="40"
+                          alt=""
+                          class="px-1"
+                        />Drone Training & Certification
+                      </h4>
+                      <p>
+                        Become a certified drone pilot with Hover Mode's expert
+                        training programs. We offer hands-on flight training,
+                        airspace regulations, safety protocols, and exam prep to
+                        help you fly legally and confidently.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="service-card bg-blue p-1 rounded">
+                      <h4>
+                        <img
+                          src="/assets/robot.png"
+                          width="40"
+                          height="40"
+                          alt=""
+                          class="px-1"
+                        />STEM Education (Coding & Robotics)
+                      </h4>
+                      <p>
+                        We bring tech to the classroom! Our STEM programs
+                        introduce students to coding, robotics, drone
+                        engineering, and problem-solving through interactive,
+                        real-world applications.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="service-card bg-blue p-1 rounded">
+                      <h4>
+                        <img
+                          src="/assets/drone-farming.png"
+                          width="40"
+                          height="40"
+                          alt=""
+                          class="px-1"
+                        />Agricultural Drone Services
+                      </h4>
+                      <p>
+                        Maximize your crop yields with precision farming. Our
+                        agricultural drones apply chemicals with accuracy,
+                        saving time, reducing waste, and enhancing productivity
+                        across your farm.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-1">
+                  <p class="lead">
+                    Empowering individuals, schools, and industries with smart,
+                    sustainable tech.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="page-section">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <div class="content-area">
+                <h2 class="mb-1">About Us</h2>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4>Who We Are</h4>
+                    <p>
+                      Hover Mode is a forward-thinking tech company dedicated to
+                      unlocking the potential of drone technology across
+                      education, media, and agriculture. Founded by a team of
+                      innovators, educators, and licensed drone experts, we are
+                      driven by a passion for technology and its power to change
+                      lives and industries.
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Our Mission</h4>
+                    <p>
+                      To elevate how people learn, work, and grow by providing
+                      advanced aerial services, practical drone training, and
+                      accessible STEM education that prepares communities for a
+                      tech-driven future.
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-1">
+                  <h3 class="mb-4">Why Choose Hover Mode?</h3>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      Certified drone pilots & instructors
+                    </li>
+                    <li class="list-group-item">
+                      Custom solutions for education & agriculture
+                    </li>
+                    <li class="list-group-item">
+                      A track record of safety, reliability, and creativity
+                    </li>
+                    <li class="list-group-item">
+                      Passionate about empowering the next generation
+                    </li>
+                  </ul>
+                  <p class="mt-1">
+                    <em>Innovation takes flight with Hover Mode.</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <!-- Empty space for drone to appear -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="page-section bg-light">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-end">
+            <div class="col-lg-6 order-lg-2">
+              <div
+                class="content-area"
+                style="background-color: rgba(16, 164, 202, 255)"
+              >
+                <h2 class="mb-5">Contact Us</h2>
+                <div class="row">
+                  <div class="col-md-7">
+                    <h3>Let's Connect and Take Flight!</h3>
+                    <p>
+                      Have a question, want to book a service, or collaborate
+                      with us? We'd love to hear from you.
+                    </p>
+                    <address>
+                      <strong>📍 Address:</strong>Athi River Business Park<br />
+                      <strong>📞 Phone:</strong> 072000000<br />
+                      <strong>📧 Email:</strong> info@hovermode.com<br />
+                      <strong>🕒 Business Hours:</strong> Mon–Fri, 9AM–5PM
+                    </address>
+                    <div class="social-links mt-4">
+                      <p>
+                        Follow us on:
+                        <a href="" class="p-1">
+                          <img
+                            src="/assets/instagram.png"
+                            width="25"
+                            height="25"
+                            alt=""
+                          />
+                        </a>
+
+                        <a href="" class="p-1">
+                          <img
+                            src="/assets/twitter.png"
+                            width="25"
+                            height="25"
+                            alt=""
+                          />
+                        </a>
+
+                        <a href="" class="p-1">
+                          <img
+                            src="/assets/fb.png"
+                            width="25"
+                            height="25"
+                            alt=""
+                          />
+                        </a>
+
+                        <a href="" class="p-1">
+                          <img
+                            src="/assets/linkedin.png"
+                            width="25"
+                            height="25"
+                            alt=""
+                          />
+                        </a>
+
+                        <a href="" class="p-1">
+                          <img
+                            src="/assets/whatsapp.png"
+                            width="25"
+                            height="25"
+                            alt=""
+                          />
+                        </a>
+                      </p>
+                      <!-- Add your social media links here -->
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <form>
+                      <div class="mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Your Name"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Your Email"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <textarea
+                          class="form-control"
+                          rows="5"
+                          placeholder="Your Message"
+                        ></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-light">
+                        Send Message
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">
+          © 2025 Hover Mode. All rights reserved. Designed by Victor Kivungi
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

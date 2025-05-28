@@ -1,0 +1,6 @@
+// Custom color variables (extracted to RGB components for better alpha control)
+$blue-r: 16;
+$blue-g: 164;
+$blue-b: 202;
+$blue: rgba($blue-r, $blue-g, $blue-b, 1);
+$blue-light: rgba($blue-r, $blue-g, $blue-b, 0.1);
