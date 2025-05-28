@@ -1,6 +1,9 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
+// Import the GLB file via Vite (must be placed in src/assets/models/)
+import droneModelUrl from "../assets/models/sdc-drone.glb?url";
+
 export function initThreeApp() {
   const container = document.getElementById("three-container");
   const scene = new THREE.Scene();
@@ -35,10 +38,10 @@ export function initThreeApp() {
 
   const loader = new GLTFLoader();
   let drone;
-  let isMobile = window.innerWidth <= 768; // Determine device on load
+  let isMobile = window.innerWidth <= 768;
 
   loader.load(
-    "https://hover-mode-website.onrender.com/public/models/sdc-drone.glb",
+    droneModelUrl,
     (gltf) => {
       drone = gltf.scene;
       drone.scale.set(2, 2, 2);
@@ -47,6 +50,10 @@ export function initThreeApp() {
       drone.position.sub(center);
       drone.position.set(isMobile ? 0 : 8, 0, 0);
       scene.add(drone);
+    },
+    undefined,
+    (error) => {
+      console.error("Failed to load GLB model:", error);
     }
   );
 
@@ -54,10 +61,9 @@ export function initThreeApp() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
-
-    // Update device type on resize
     isMobile = window.innerWidth <= 768;
   }
+
   window.addEventListener("resize", onWindowResize);
 
   function animate() {
@@ -67,6 +73,7 @@ export function initThreeApp() {
     }
     renderer.render(scene, camera);
   }
+
   animate();
 
   return {
