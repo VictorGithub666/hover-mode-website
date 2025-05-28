@@ -37,7 +37,7 @@ export function initThreeApp() {
   let drone;
   let isMobile = window.innerWidth <= 768; // Determine device on load
 
-  loader.load("/models/sdc-drone.glb", (gltf) => {
+  loader.load("public/models/sdc-drone.glb", (gltf) => {
     drone = gltf.scene;
     drone.scale.set(2, 2, 2);
     const box = new THREE.Box3().setFromObject(drone);
