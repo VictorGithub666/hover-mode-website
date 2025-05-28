@@ -37,15 +37,18 @@ export function initThreeApp() {
   let drone;
   let isMobile = window.innerWidth <= 768; // Determine device on load
 
-  loader.load("public/models/sdc-drone.glb", (gltf) => {
-    drone = gltf.scene;
-    drone.scale.set(2, 2, 2);
-    const box = new THREE.Box3().setFromObject(drone);
-    const center = box.getCenter(new THREE.Vector3());
-    drone.position.sub(center);
-    drone.position.set(isMobile ? 0 : 8, 0, 0);
-    scene.add(drone);
-  });
+  loader.load(
+    "https://hover-mode-website.onrender.com/public/models/sdc-drone.glb",
+    (gltf) => {
+      drone = gltf.scene;
+      drone.scale.set(2, 2, 2);
+      const box = new THREE.Box3().setFromObject(drone);
+      const center = box.getCenter(new THREE.Vector3());
+      drone.position.sub(center);
+      drone.position.set(isMobile ? 0 : 8, 0, 0);
+      scene.add(drone);
+    }
+  );
 
   function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
